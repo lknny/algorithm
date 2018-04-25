@@ -22,6 +22,7 @@ public class 二分查找 {
 		}
 	}
 
+	/*非递归实现*/
 	public static int binSearch2(int[]array,int begin,int end,int key) {
 
 		while (begin <= end) {
