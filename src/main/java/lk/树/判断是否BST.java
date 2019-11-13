@@ -2,6 +2,9 @@ package lk.树;
 
 /**
  * Created by ${ lknny@163.com } on 2019/10/28.
+ *
+ * 错的。。。可以递归搞。
+ *
  */
 public class 判断是否BST {
 
