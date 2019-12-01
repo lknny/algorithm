@@ -64,4 +64,25 @@ public class 多数元素 {
 		}
 		return false;
 	}
+
+	public boolean isPowerOfTwo(int n) {
+		if (n==0) return false;
+		if (n==1||n==2) return true;
+		if (n%2!=0) return false;
+		while (n / 2 > 1) {
+			n = n / 2;
+			if (n % 2 != 0) return false;
+		}
+		return true;
+
+	}
+
+	int sum = 0;
+	public int climbStairs(int n) {
+		if (n<=0) return 0;
+		if (n==1) return 1;
+		if (n==2) return 2;
+
+		return sum + climbStairs(n - 1) + climbStairs(n - 2);
+	}
 }
